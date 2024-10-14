@@ -15,32 +15,33 @@
             background-color: #2f363d; /* Grey background */
             color: #c9d1d9;
             display: flex;
-            justify-content: space-between;
         }
         .sidebar {
             width: 250px;
             background-color: #0d1117;
             padding: 20px;
             height: 100vh;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
         }
         .sidebar h2 {
             color: #58a6ff;
-            font-size: 16px;
-            margin-bottom: 10px;
+            font-size: 18px;
+            margin-bottom: 20px;
         }
         .sidebar ul {
             list-style: none;
         }
         .sidebar ul li {
-            margin: 10px 0;
+            margin: 15px 0;
         }
         .sidebar ul li a {
             color: #c9d1d9;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 16px;
             display: block;
-            padding: 10px;
+            padding: 12px;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         .sidebar ul li a:hover {
             background-color: #161b22;
@@ -49,8 +50,11 @@
             background-color: #010409;
             color: #c9d1d9;
             width: 100%;
-            padding: 20px;
+            padding: 25px;
             text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
         .main-content {
             flex-grow: 1;
@@ -58,31 +62,34 @@
         }
         .panel {
             background-color: #151b23;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
             color: #c9d1d9;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         .panel h2 {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 22px;
         }
         .panel img {
             width: 100%;
             max-width: 300px;
             border-radius: 6px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         .panel p {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             color: #8b949e;
         }
         .panel .green-button {
             background-color: #238636;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             border: none;
             border-radius: 6px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
         .panel .green-button:hover {
             background-color: #2ea043;
@@ -94,14 +101,26 @@
             height: 100vh;
             color: #c9d1d9;
             border-radius: 8px;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
         }
         .right-panel h3 {
             color: #58a6ff;
             margin-bottom: 20px;
+            font-size: 18px;
         }
         .update-item {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             color: #8b949e;
+            padding: 15px;
+            background-color: #0d1117;
+            border-radius: 6px;
+        }
+        .update-item p {
+            margin-bottom: 5px;
+        }
+        .update-item small {
+            font-size: 12px;
+            color: #6b717f;
         }
     </style>
 </head>
@@ -109,8 +128,7 @@
     <div class="sidebar">
         <h2>Owner's Repositories</h2>
         <ul>
-            
-
+            <!-- Add items here -->
         </ul>
     </div>
 
@@ -121,45 +139,41 @@
         
         <div class="panel">
             <h2>Available Downloads</h2>
-            
-            
-            <!-- Item 3 -->
-            <img src="https://cdn.discordapp.com/attachments/1216237099163062415/1294326319571538051/Screenshot_2024-10-11_115027.png?ex=670a9ad2&is=67094952&hm=20ed754183dd066b0a28dc776ca21f752bc41fc69fd090b5614ed677805c985c&" alt="Project Image 3">
+            <img src="https://centerpointgaming.com/assets/images/crosshairv2/crosshair_array.png" alt="Project Image 3">
             <p><strong>zaso crosshair</strong></p>
             <p>zaso crosshair free crosshair program for all games</p>
             <a href="https://cdn.discordapp.com/attachments/1216237099163062415/1294326150125981717/zaso_corsshair.rar?ex=670a9aa9&is=67094929&hm=132fd0b044b4a76265e0ea535a626bd28c38839c87e78d20d76bf6b63824cd3d&" class="green-button">Download</a>
-            
         </div>
-
-        <!-- News Panel -->
+      <div class="panel">
+          
+          <img src="https://files.catbox.moe/50xhpy.png" alt="Project Image 3">
+          <p><strong>ip pinger</strong></p>
+          <p>Free to use ip pinger</p>
+          <a href="https://cdn.discordapp.com/attachments/847543685872091176/847545438479188028/ip_pinger.bat?ex=670e0ef3&is=670cbd73&hm=a75ff56eff7dcbbfe7a96c4587d238f399e25e70e626d1fe77556618a959aff2&" class="green-button">Download</a>
+      </div>
         <div class="panel">
             <h2>News</h2>
             <p>● Beta has been released</p>
-            <p>● Everything submitted will be virus checke and used on a VM</p>
+            <p>● Everything submitted will be virus checked and used on a VM</p>
         </div>
 
-        <!-- Trending Panel -->
         <div class="panel">
-            <h2>submit</h2>
-            <p>submit here: https://discord.gg/mP4PVAphar </p>
+            <h2>Submit</h2>
+            <p>Submit here: https://discord.gg/mP4PVAphar </p>
         </div>
     </div>
 
     <div class="right-panel">
         <h3>Latest Updates</h3>
         <div class="update-item">
-            <p><strong>hotfix</strong> Fixxed download button not working</p>
-            <p><small>11:45 on 10/11/2024</small></p>
+            <p><strong>Hotfix:</strong> Fixed download button not working</p>
+            <small>11:45 on 10/11/2024</small>
+          
         </div>
-        <div class="update-item">
-            
-        </div>
-        <div class="update-item">
-            
-        </div>
-        <div class="update-item">
-           
-        </div>
+      <div class="update-item">
+        <p><strong>Update</strong> updated ui</p>
+        <small>1:47 on 10/14/2024</small>
+
     </div>
 </body>
 </html>
